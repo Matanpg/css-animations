@@ -1,0 +1,61 @@
+.div_1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  background-color: blue;
+  animation: 1s slide_blue infinite;
+}
+
+@keyframes slide_blue {
+  to {
+    transform: translateX(400px);
+  }
+}
+
+.div_2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  background-color: blue;
+  transform: translate(400px,-200px);
+  animation: 1s slide_yellow infinite;
+}
+
+@keyframes slide_yellow {
+  to {
+    transform: translate(400px,200px);
+  }
+}
+
+.div_3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  background-color: blue;
+  animation: 1s slide_red infinite;
+}
+
+@keyframes slide_red {
+  to {
+    transform: translateY(-400px);
+  }
+}
+
+.div_4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  background-color: blue;
+  transform: translate(400px,-200px);
+  animation: 1s slide_green infinite;
+}
+
+@keyframes slide_green {
+  to {
+    transform: translate(-0px,-200px);
+  }
+}
+/*.div_1:hover, .div_2:hover, .div_3:hover {
+  transform: scale(2);
+  background: green;
+}*/

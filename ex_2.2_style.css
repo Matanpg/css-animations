@@ -1,0 +1,59 @@
+.outer {
+  width: 1400px;
+  height: 1000px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.inner_1 {
+  background: url(pizza.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow_1 10s linear infinite;
+}
+
+@keyframes slideshow_1 {
+  0% {top: 0%;}
+  100% {top: -200%;}
+}
+
+.inner_2 {
+  background: url(pizza.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow_2 10s linear infinite;
+}
+
+@keyframes slideshow_2 {
+  0% {top: 100%;}
+  100% {top: -100%;}
+}
+
+.inner_3 {
+  background: url(pizza.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  animation: slideshow_3 10s linear infinite;
+}
+
+@keyframes slideshow_3 {
+  0% {top: 200%;}
+  100% {top: 0%;}
+}

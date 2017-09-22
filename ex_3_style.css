@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrap {
+  background-color: black;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.wrap__bar {
+  width: 30%;
+  height: 7%;
+  background-color: white;
+  position: absolute;
+  top: 33%;
+  left: 35%;
+}
+
+.wrap__bar__fill {
+  height: 100%;
+  background-color: blue;
+  float: left;
+  animation: barFill 5s linear infinite;
+}
+
+@keyframes barFill {
+  0% {width: 0%;}
+  100% {width: 100%;}
+}
+
+.wrap__bar__back {
+  height: 100%;
+  clear: right;
+  animation: barBackFill 1s steps(7, end) infinite;
+}
+
+@keyframes barBackFill {
+  0% {width: 0%;}
+  100% {width: 100%;}
+}
+
+.wrap__bar__back__tick {
+  height: 100%;
+  width: 10px;
+  background-color: green;
+  float: right;
+}
+/*.wrap__bar__tick {
+  height: 100%;
+  width: 10px;
+  background-color: green;
+  animation: tickMove 0.5s linear infinite;
+}
+
+@keyframes tickMove {
+  to {
+    transform: translateX(100%);
+  }
+}*/
